@@ -1,0 +1,8 @@
+#! /bin/bash
+
+if [[ -z "$1" ]]; then
+	echo "you should use rw fille "
+else
+  	file=${1/.m/};
+	xcrun -sdk iphoneos clang -arch arm64 -rewrite-objc -fobjc-arc -fobjc-runtime=ios-8.0.0 $file.m -o $file.cpp
+fi
