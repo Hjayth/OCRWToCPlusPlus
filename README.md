@@ -1,4 +1,4 @@
-# OCRWToC-
+# OCRWToC++
 a simple tool to reWrite oc implement file to c++ source
 
 # How to use
